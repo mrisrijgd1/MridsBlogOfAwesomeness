@@ -1,6 +1,6 @@
 project:
   type: website
-
+  output-dir: docs
 website:
   title: "MridsBlogOfAwesomeness"
   google-analytics: G-PKNCJ36Q1P
