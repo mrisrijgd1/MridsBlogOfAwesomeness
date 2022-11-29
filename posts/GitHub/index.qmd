@@ -1,0 +1,36 @@
+---
+title: "GitHub"
+image: github.jpg
+author: "Mridul Jain"
+date: "2022-11-22"
+categories: [Coding, R, GitHub]
+---
+
+Welcome!
+In this post, I'm going to talk about how you can upload files to a GitHub repo using R!  
+  
+### Creating a Repository in GitHub
+Open [https://github.com/](https://github.com/). 
+Then click on the "new" button. 
+![](Creating_a_repo.jpg)
+Name your repository and make sure it's public!  
+  
+### Creating an SSH Key
+You need to create an SSH Key to upload files to GitHub.  
+To create an SSH Key, first you open your terminal and create an ed25519 key.   Ed25519 is one of the many algorithms that can be used to generate a key. Use the command `ssh-keygen -t ed25519` to generate the key.  
+Use code `cd` to exit all directories.    
+Use code `cd .ssh` to enter an invisible directory for ssh keys.    
+Use code `cat id_ed25519.pub` and it'll give the key code as the output.    
+Copy the code and open GitHub -> Click on your Profile -> Settings -> SSH and GPG Keys -> New SSH Key. Name your Key and then paste the code and create the key.
+
+### Uploading to your repo
+Use the code `cd /cloud/project/NAME` to get to the directory you want to upload. 
+Use the code `git init` to initialize an empty repo and create files necessary for the process.  
+Use the code `git add .` which adds like a git file thingy that is necessary for upload.  
+Use the code `git config --global user.email "your_email@example.com"`.    
+Now use `git commit -m 'NAME YOUR COMMIT'` to tell R what to upload.     
+Also use `git remote add origin git@github.com:USERNAME/REPONAME.git` to tell R in which repository to upload.  
+Finally, use `git push origin master` to upload everything to your repo. 
+If you have existing files in a repository and want to replace them, then you need to force push. This means you will delete all the files currently in the repo and replace them with your new commit. To do this, use the code `git push origin master -f`.
+  
+**That was all! I hope it helped and *stay tuned for more...***

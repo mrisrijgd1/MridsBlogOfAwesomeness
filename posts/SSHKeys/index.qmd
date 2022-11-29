@@ -1,0 +1,52 @@
+---
+title: "Public/Private Keys"
+author: "Mridul Jain"
+date: "2022-11-08"
+categories: [Coding, Public/Private Keys, R, GitHub]
+---
+
+Welcome!
+In this post, I'm going to talk about Public/Private Keys or SSH Keys and how you can create your own using RStudio.
+  
+  
+### What is a Public/Private Key?
+Public keys and private keys are the working parts of Public-Key cryptography. Together, they encrypt and decrypt data that resides or moves in a network. The public key is truly public and can be shared widely, while the private key should be known only to the owner. In order for a client to establish a secure connection with a server.  
+![](Public_key_encryption_alice_to_bob.svg)  
+  
+### Why are they useful?
+Public/Private Key pairs are useful for encrypting and decrypting data, which includes messages in apps such as WhatsApp.
+
+### How to create your own Key Pair and upload data safely to GitHub
+#### **Creating your own Key Pair**
+First you open your terminal and create an ed25519 key. Ed25519 is one of the many algorithms that can be used to generate a key. Use the command `ssh-keygen -t ed25519` to generate the key. This will create 2 different keys: one private and one public. A public key can look like:  
+```
+ssh-ed25519 AAACC3NzaC1lKDI1NTE5AAAAAPP94ubEv7bFSGK0sJYBumvbboRIqmCG5o1sJV5liA2Ar441783@application-7343632-deployment-15690147-bqvdr
+```
+And a private key can look like:
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDz/eLmxL+2xUhitLCWAbpr226ESKpghuaNbCVeZYgNgAAAALiQnV3dkJ1d
+3QAAAAtzc2gtZWQyNTUxOQAAACDz/eLmxL+2xUhitLCWAbpr226ESKpghuaNbCVeZYgNgA
+AAAEAfAWb+sm99fQsdqyn4TIImHd8fTNkQInz+WsslPSOervP94ubEv7bFSGK0sJYBumvb
+boRIqmCG5o1sJV5liA2AAAAXNXI0NDE3ODNAYXBwbGljYXRpb24tNzM0MzYzMi1kZXBsb3
+ltZW50LTE1NjkwMTQ3LWJxdmRy
+-----END OPENSSH PRIVATE KEY-----
+```
+#### **Reading your Public Key Code and creating an SSH Key on GitHub**
+Use code `cd` to exit all directories.  
+Use code `cd .ssh` to enter an invisible directory for ssh keys.  
+Use code `cat id_ed25519.pub` and it'll give the key code as the output.  
+Copy the code and open GitHub -> Click on your Profile -> Settings -> SSH and GPG Keys -> New SSH Key. Name your Key and then paste the code and create the key.  
+  
+#### **Uploading a folder to GitHub using the SSH Key**
+Go to GitHub and create a repository and make it public.  
+Use the code `cd /cloud/project/NAME` to get to the directory you want to upload. 
+Use the code `git init` to initialize an empty repo and create files necessary for the process.  
+Use the code `git add .` which adds like a git file thingy that is necessary for upload.  
+Use the code `git config --global user.email "your_email@example.com"`.    
+Now use `git commit -m 'NAME YOUR COMMIT'` to tell R what to upload.     
+Also use `git remote add origin git@github.com:USERNAME/REPONAME.git` to tell R in which repository to upload.  
+Finally, use `git push origin master` to upload everything to your repo.  
+  
+**That was all! I hope it helped and *stay tuned for more...***

@@ -1,0 +1,32 @@
+---
+title: "Data Binning"
+author: "Mridul Jain"
+date: "2022-11-29"
+categories: [Coding, Data, R]
+---
+Welcome!
+In this post, I'm going to talk about what data binning is!
+  
+### What is Data Binning?
+Data binning is a method for organizing quantities of continuous values into fewer "bins." For instance, you could want to divide a group of people's ages into fewer age intervals if you have statistics on them (for example, grouping every five years together).  
+  
+![](binning.jpg)
+  
+### Example of Data Binning in R using histograms
+#### **Creating Data**
+To bin data, we first need to make data. To generate sample data, we can use the `sample` function.
+```{r}
+set.seed(123)
+x <- sample(x=1:10, replace=TRUE, size=10)
+x
+```
+The `set.seed` function makes it so that every time we run the command with a certain number, we will get the same result instead of it being random. If you want to know more about the `sample` function and its parameters then run `?sample`. I created a sample data that is 10 numbers long with the possible numbers being 1-10 and assigned it to the variable x.
+
+#### **Histograms**
+Histograms are a type of diagram. Using the `hist` function we can can create a histogram.
+```{r}
+hist(x, breaks=3)
+```
+Here, I created a histogram of the variable x with 3 numbers grouped together, i.e. 2, 3, 4; 4, 5, 6; 6, 7, 8 and 8, 9, 10. (Thats what the breaks parameter did).  
+  
+**That was all! I hope it helped and *stay tuned for more...***
