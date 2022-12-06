@@ -1,0 +1,22 @@
+---
+title: "Training Data Sets"
+author: "Mridul Jain"
+date: "2022-12-06"
+categories: [coding]
+---
+
+Welcome!
+In this post I'm going to talk about training data sets.
+  
+![](TrainingValidationTest.png)
+  
+### What are training data sets?
+A training data set is a data set of examples used during the learning process and is used to fit the parameters (e.g., weights) of, for example, a classifier.
+
+### What are they used for?
+For classification tasks, a supervised learning algorithm looks at the training data set to determine, or learn, the optimal combinations of variables that will generate a good predictive model, The goal is to produce a trained (fitted) model that generalizes well to new, unknown data.
+
+### Validation and Testing
+The predictive model is put through a validation test to check its accuracy using a validation data set and tweaked if necessary. Then the best model is chosen and used on a test data as a final accuracy test.
+
+**That was all! I hope it helped and *stay tuned for more...***

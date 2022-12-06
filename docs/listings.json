@@ -2,10 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/DataBinning/index.html",
-      "/posts/GitHub/index.html",
-      "/posts/SSHKeys/index.html",
-      "/posts/ArtOfLiving/index.html"
+      "/posts/TrainingDataSets/trainingdataset.html",
+      "/posts/DataBinning/binning.html",
+      "/posts/GitHub/github.html",
+      "/posts/SSHKeys/keys.html",
+      "/posts/ArtOfLiving/aol.html"
     ]
   }
 ]

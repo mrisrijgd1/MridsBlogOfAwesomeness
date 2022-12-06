@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "MridulsBlogofAwesomeness",
     "section": "",
-    "text": "Coding\n\n\nData\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCoding\n\n\nR\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCoding\n\n\nPublic/Private Keys\n\n\nR\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nmeditation\n\n\naol\n\n\n\n\n\n\n\n\n\n\n\nOct 29, 2022\n\n\nMridul Jain\n\n\n\n\n\n\nNo matching items"
+    "text": "coding\n\n\n\n\n\n\n\n\n\n\n\nDec 6, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCoding\n\n\nData\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCoding\n\n\nR\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCoding\n\n\nPublic/Private Keys\n\n\nR\n\n\nGitHub\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2022\n\n\nMridul Jain\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nmeditation\n\n\naol\n\n\n\n\n\n\n\n\n\n\n\nOct 29, 2022\n\n\nMridul Jain\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -14,31 +14,38 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/ArtOfLiving/index.html",
-    "href": "posts/ArtOfLiving/index.html",
+    "objectID": "posts/ArtOfLiving/aol.html",
+    "href": "posts/ArtOfLiving/aol.html",
     "title": "The Art Of Living",
     "section": "",
     "text": "What is the Art of Living\nThe Art of Living is an organization lead by Sri Sri Ravi Shankar. The motto of Art of Living is to realize that life is a celebration, and the whole world is one family. They give courses teaching a breathing technique called the Sudarshan Kriya and more.\n\n\nWhat is the Sudarshan Kriya\nThe Sudarshan Kriya is a breathing teachnique that benefits you in sveral different ways such as reducing stress and depression, enhance the immune system functonality and also increases mental focus. Several researches have been done about this type of yoga. You can find more about the Sudarshan Kriya in the following link and video.\nArt of Living Website\n\n\n\nMore about them\nThe Art of Living courses inspires a service ethic. They believe that adding an element of service adds depths to our lives. They also work with several communities such as Disaster & Trauma Relief.\n\n\nPersonal Experience\nI regularly practice the YES Sudarshan Kriya, which is a teenager version of the the normal Sudarshan Kriya, and I’ve found that practicing their breathing techniques has improved my mental focus and greatly enhanced my memory. I find these techniques very calming as well.\n\n\nContact\nTo Contact the Art of Living, try the following number and links. Phone Number: +49800000582\nFacebook\nInstagram\nTwitter\nThat was all! I hope it helped and stay tuned for more…"
   },
   {
-    "objectID": "posts/DataBinning/index.html",
-    "href": "posts/DataBinning/index.html",
+    "objectID": "posts/DataBinning/binning.html",
+    "href": "posts/DataBinning/binning.html",
     "title": "Data Binning",
     "section": "",
     "text": "What is Data Binning?\nData binning is a method for organizing quantities of continuous values into fewer “bins.” For instance, you could want to divide a group of people’s ages into fewer age intervals if you have statistics on them (for example, grouping every five years together).\n\n\n\nExample of Data Binning in R using histograms\n\nCreating Data\nTo bin data, we first need to make data. To generate sample data, we can use the sample function.\n\nset.seed(123)\nx <- sample(x=1:10, replace=TRUE, size=10)\nx\n\n [1]  3  3 10  2  6  5  4  6  9 10\n\n\nThe set.seed function makes it so that every time we run the command with a certain number, we will get the same result instead of it being random. If you want to know more about the sample function and its parameters then run ?sample. I created a sample data that is 10 numbers long with the possible numbers being 1-10 and assigned it to the variable x.\n\n\nHistograms\nHistograms are a type of diagram. Using the hist function we can can create a histogram.\n\nhist(x, breaks=3)\n\n\n\n\nHere, I created a histogram of the variable x with 3 numbers grouped together, i.e. 2, 3, 4; 4, 5, 6; 6, 7, 8 and 8, 9, 10. (Thats what the breaks parameter did).\nThat was all! I hope it helped and stay tuned for more…"
   },
   {
-    "objectID": "posts/SSHKeys/index.html",
-    "href": "posts/SSHKeys/index.html",
+    "objectID": "posts/SSHKeys/keys.html",
+    "href": "posts/SSHKeys/keys.html",
     "title": "Public/Private Keys",
     "section": "",
     "text": "What is a Public/Private Key?\nPublic keys and private keys are the working parts of Public-Key cryptography. Together, they encrypt and decrypt data that resides or moves in a network. The public key is truly public and can be shared widely, while the private key should be known only to the owner. In order for a client to establish a secure connection with a server.\n\n\n\nWhy are they useful?\nPublic/Private Key pairs are useful for encrypting and decrypting data, which includes messages in apps such as WhatsApp.\n\n\nHow to create your own Key Pair and upload data safely to GitHub\n\nCreating your own Key Pair\nFirst you open your terminal and create an ed25519 key. Ed25519 is one of the many algorithms that can be used to generate a key. Use the command ssh-keygen -t ed25519 to generate the key. This will create 2 different keys: one private and one public. A public key can look like:\nssh-ed25519 AAACC3NzaC1lKDI1NTE5AAAAAPP94ubEv7bFSGK0sJYBumvbboRIqmCG5o1sJV5liA2Ar441783@application-7343632-deployment-15690147-bqvdr\nAnd a private key can look like:\n-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDz/eLmxL+2xUhitLCWAbpr226ESKpghuaNbCVeZYgNgAAAALiQnV3dkJ1d\n3QAAAAtzc2gtZWQyNTUxOQAAACDz/eLmxL+2xUhitLCWAbpr226ESKpghuaNbCVeZYgNgA\nAAAEAfAWb+sm99fQsdqyn4TIImHd8fTNkQInz+WsslPSOervP94ubEv7bFSGK0sJYBumvb\nboRIqmCG5o1sJV5liA2AAAAXNXI0NDE3ODNAYXBwbGljYXRpb24tNzM0MzYzMi1kZXBsb3\nltZW50LTE1NjkwMTQ3LWJxdmRy\n-----END OPENSSH PRIVATE KEY-----\n\n\nReading your Public Key Code and creating an SSH Key on GitHub\nUse code cd to exit all directories.\nUse code cd .ssh to enter an invisible directory for ssh keys.\nUse code cat id_ed25519.pub and it’ll give the key code as the output.\nCopy the code and open GitHub -> Click on your Profile -> Settings -> SSH and GPG Keys -> New SSH Key. Name your Key and then paste the code and create the key.\n\n\nUploading a folder to GitHub using the SSH Key\nGo to GitHub and create a repository and make it public.\nUse the code cd /cloud/project/NAME to get to the directory you want to upload. Use the code git init to initialize an empty repo and create files necessary for the process.\nUse the code git add . which adds like a git file thingy that is necessary for upload.\nUse the code git config --global user.email \"your_email@example.com\".\nNow use git commit -m 'NAME YOUR COMMIT' to tell R what to upload.\nAlso use git remote add origin git@github.com:USERNAME/REPONAME.git to tell R in which repository to upload.\nFinally, use git push origin master to upload everything to your repo.\nThat was all! I hope it helped and stay tuned for more…"
   },
   {
-    "objectID": "posts/GitHub/index.html",
-    "href": "posts/GitHub/index.html",
+    "objectID": "posts/GitHub/github.html",
+    "href": "posts/GitHub/github.html",
     "title": "GitHub",
     "section": "",
     "text": "Creating a Repository in GitHub\nOpen https://github.com/. Then click on the “new” button.  Name your repository and make sure it’s public!\n\n\nCreating an SSH Key\nYou need to create an SSH Key to upload files to GitHub.\nTo create an SSH Key, first you open your terminal and create an ed25519 key. Ed25519 is one of the many algorithms that can be used to generate a key. Use the command ssh-keygen -t ed25519 to generate the key.\nUse code cd to exit all directories.\nUse code cd .ssh to enter an invisible directory for ssh keys.\nUse code cat id_ed25519.pub and it’ll give the key code as the output.\nCopy the code and open GitHub -> Click on your Profile -> Settings -> SSH and GPG Keys -> New SSH Key. Name your Key and then paste the code and create the key.\n\n\nUploading to your repo\nUse the code cd /cloud/project/NAME to get to the directory you want to upload. Use the code git init to initialize an empty repo and create files necessary for the process.\nUse the code git add . which adds like a git file thingy that is necessary for upload.\nUse the code git config --global user.email \"your_email@example.com\".\nNow use git commit -m 'NAME YOUR COMMIT' to tell R what to upload.\nAlso use git remote add origin git@github.com:USERNAME/REPONAME.git to tell R in which repository to upload.\nFinally, use git push origin master to upload everything to your repo. If you have existing files in a repository and want to replace them, then you need to force push. This means you will delete all the files currently in the repo and replace them with your new commit. To do this, use the code git push origin master -f.\nThat was all! I hope it helped and stay tuned for more…"
+  },
+  {
+    "objectID": "posts/TrainingDataSets/trainingdataset.html",
+    "href": "posts/TrainingDataSets/trainingdataset.html",
+    "title": "Training Data Sets",
+    "section": "",
+    "text": "What are training data sets?\nA training data set is a data set of examples used during the learning process and is used to fit the parameters (e.g., weights) of, for example, a classifier.\n\n\nWhat are they used for?\nFor classification tasks, a supervised learning algorithm looks at the training data set to determine, or learn, the optimal combinations of variables that will generate a good predictive model, The goal is to produce a trained (fitted) model that generalizes well to new, unknown data.\n\n\nValidation and Testing\nThe predictive model is put through a validation test to check its accuracy using a validation data set and tweaked if necessary. Then the best model is chosen and used on a test data as a final accuracy test.\nThat was all! I hope it helped and stay tuned for more…"
   }
 ]
